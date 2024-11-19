@@ -1,0 +1,457 @@
+
+/* ROBOTO MONO */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* INTER DISPLAY */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --BGCOLOR: #edeff2;
+    --FONTCOLOR: #070708;
+    --HOVERCOLOR: #868686;
+    --BTNCOLOR: #c5ddf4;
+    --BORDER-COLOR: #c8cbd1;
+    --GRAYCOLOR: #868686;
+    --BTNHOVER-COLOR: #d7e5f1;
+}
+
+body {
+    background-color: var(--BGCOLOR);
+    font-family: "Roboto Mono";
+}
+
+/* HEADER STYLING */
+.logo img {
+    width: 55px;
+    height: auto;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo p {
+    font-size: 20px;
+}
+.navAbout {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.navAbout p {
+    font-size: 14px;
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 30px 10px 10px;
+}
+.navBar p {
+    font-weight: 600;
+}
+#builders {
+    display: none;
+}
+.btnContainer {
+    display: flex;
+    align-items: center;
+}
+.btnContainer button {
+    padding: 12px 17px;
+    background-color: var(--BTNCOLOR);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.btnContainer button:hover {
+    background-color: var(--BTNHOVER-COLOR);
+}
+a:any-link {
+    color: var(--FONTCOLOR);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--HOVERCOLOR);
+}
+
+/* MAIN STYLING */
+.connecting {
+    margin-top: 80px;
+    margin-bottom: 120px;
+    text-align: center;
+}
+.connecting h1 {
+    font-size: 65px;
+    font-family: "Inter";
+    font-weight: 500;
+    line-height: 107%;
+    letter-spacing: -0.84px;
+    margin-bottom: 25px;
+}
+.animation {
+    display: flex;
+    justify-content: center;
+    cursor: default;
+    color: black;
+    background-color: transparent;
+    touch-action: none;
+}
+.connecting p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: -0.32px;
+    margin-bottom: 100px;
+}
+
+/* ABOUT SECTION STYLING */
+.aboutSection {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    align-items: start;
+    display: grid;
+    margin: 40px;
+    margin-bottom: 150px;
+}
+.about {
+    position: sticky;
+    top: 32px;
+}
+.about h2 {
+    font-size: 47px;
+    font-weight: 500;
+    line-height: 107%;
+    letter-spacing: -0.0094em;
+}
+.aboutSection .ourfocus{
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 107%;
+    letter-spacing: -0.0056em;
+}
+.mission {
+    border: 1px solid var(--BORDER-COLOR);
+    border-radius: 8px;
+    margin-top: 48px;
+    padding: 32px 32px 48px;
+}
+.mission p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    color: rgb(80, 78, 78);
+    letter-spacing: -0.004em;
+}
+
+/* PORTFOLIO SECTION STYLING */
+.portfolio-h2{
+    font-size: 47px;
+    font-weight: 500;
+    line-height: 107%;
+    letter-spacing: -0.0094em;
+    margin-bottom: 60px;
+}
+.portfolio {
+    margin: 40px 30px 65px 30px;
+}
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+}
+.portfolioContainer {
+    border: 1px solid var(--BORDER-COLOR);
+    height: 250px;
+    padding: 20px;
+    transition: 0.4s ease;
+}
+.portfolioContainer:hover {
+    background-color: white;
+    filter: none;
+}
+.tradoor {
+    display: flex;
+    justify-content: space-between;
+}
+.tradoor p {
+    border: 1px solid var(--BORDER-COLOR);
+    padding: 0 10px;
+    border-radius: 4px;
+    color: var(--GRAYCOLOR);
+}
+.portfolioContainer img {
+    width: 65px;
+    height: auto;
+    filter: brightness(30%) grayscale();
+}
+.imageContainer {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.imageContainer .tradoorimg {
+    width: 85px;
+    height: auto;
+}
+.viewMore {
+    text-align: center;
+    margin-bottom: 160px;
+    letter-spacing: -2px;
+}
+
+/* SUPPORT SECTION STYLING */
+.support h2 {
+    font-size: 47px;
+    font-weight: 500;
+    line-height: 107%;
+    letter-spacing: -0.0094em;
+}
+.stickySupport {
+    position: sticky;
+    top: 32px;
+}
+.incubatorContainer {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    align-items: start;
+    display: grid;
+    margin: 20px;
+    margin-bottom: 150px;
+}
+.incubatorTonacc, .incubatorTonacc2 {
+    border: 1px solid var(--BORDER-COLOR);
+    border-radius: 8px;
+    padding: 32px 32px 48px;
+}
+.incubatorTonacc img {
+    width: 45px;
+    height: auto;
+    margin-bottom: 45px;
+}
+.incubatorTonacc2 img{
+    width: 45px;
+    height: auto;
+    margin-bottom: 100px;
+}
+.incubatorTonacc2 h3, .incubatorTonacc h3 {
+    margin-bottom: 15px;
+}
+.visitPortlContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.visitPortal {
+    border: 1px solid var(--BORDER-COLOR);
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    height: 35px;
+    border-radius: 4px;
+    font-size: 15px;
+    color: var(--GRAYCOLOR);
+}
+
+/* APPLY PROJECT SECTION STYLING */
+ .applyProject {
+    display: grid;
+    place-content: center;
+    border: 1px solid var(--HOVERCOLOR);
+    margin: 30px 30px 150px 30px ;
+    background-color: whitesmoke;
+    height: 90vh;
+    border-radius: 7px; 
+ }
+.applyProject h2 {
+    color: #07070875;
+    text-align: center;
+    /* width: fit-content; */
+    font-size: 120px;
+}
+.applyProject p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 130%;
+    margin-left: 16px;
+    margin-right: 16px;
+    letter-spacing: -0.32px;
+    text-align: center;
+}
+.applyProjectBtn {
+    display: flex;
+    justify-content: center;
+}
+.applyProjectBtn button {
+    padding: 12px 17px;
+    background-color: var(--BTNCOLOR);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    margin: 25px;
+}
+.applyProjectBtn button:hover {
+    background-color: var(--BTNHOVER-COLOR);
+}
+
+/* FOOTER STYLING  */
+footer {
+    margin: 30px 30px 60px 30px ;
+}
+footer p {
+    font-size: 14px;
+}
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.accuraten {
+    display: flex;
+    justify-content: space-between;
+}
+.footerText p, .accuraten p {
+    padding: 7px 0;
+    font-weight: 600;
+}
+
+/* 
+// Medium devices (tablets, 768px and up) */
+@media all and (max-width: 768px ) {
+    .navAbout {
+        gap: 15px;
+    }
+   
+    #project {
+        display: none;
+    }
+    #builders {
+        display: block;
+    }
+    .aboutSection {
+        display: block;
+    }
+    .about h2 {
+        margin-bottom: 30px;
+    }
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+    }
+    .tradoor p {
+        padding: 0 6px;
+        font-size: 14px;
+    }
+    .viewMore {
+        margin-bottom: 75px;
+    }
+    .incubatorContainer {
+        display: block;
+    }
+    .stickySupport {
+        position: static;
+    }
+    .about {
+        position: static;
+    }
+    .stickySupport h2 {
+        margin-bottom: 75px;
+    }
+    .applyProject h2 {
+        font-size: 95px;
+    }
+    .applyProject p {
+        font-size: 17px
+    }
+    footer {
+        margin: 20px 15px 40px 15px;
+    }
+}
+
+  /*   // Small devices (576px and up) */
+@media all and (max-width: 576px) {
+    .navAbout {
+        display: none;
+    }
+    .connecting h1 {
+        font-size: 40px;
+    }
+    #builders {
+        display: none;
+    }
+    .connecting p {
+        font-size: 15px;
+        max-width: fit-content;
+    }
+    .aboutSection {
+        margin: 20px;
+    }
+    .about h2 {
+        font-size: 32px; 
+    }
+    .ourfocus p {
+        font-size: 21px;
+        letter-spacing: -0.056em;
+        line-height: 125%;
+    }
+    .mission h2 {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .mission p {
+        font-size: 14px;
+        line-height: 130%;
+        letter-spacing: -0.004em;
+    }
+    .portfolio-h2 {
+        font-size: 32px; 
+        letter-spacing: -0.10em;
+    }
+    .portfolio {
+        margin: 20px 30px 65px 30px;
+    }
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 1fr;
+    }
+    .stickySupport h2 {
+        font-size: 32px; 
+    }
+    .incubatorTonacc h3 {
+        font-size: 16px;
+    }
+    .incubatorTonacc img {
+        margin-bottom: 100px;
+    }
+    .incubatorTonacc {
+        margin-bottom: 25px;
+    }
+    .incubatorTonacc p, .incubatorTonacc2 p {
+        font-size: 14px;
+    }
+    .footerContainer {
+        display: block;
+    }
+}
+
+@media all and (max-width: 495px ) {
+    .applyProject h2 {
+        font-size: 45px;
+    }
+}
